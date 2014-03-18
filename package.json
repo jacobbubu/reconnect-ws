@@ -1,0 +1,32 @@
+{
+  "name": "reconnect-ws",
+  "version": "0.0.0",
+  "description": "Reconnect a websocket stream when it goes down.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jacobbubu/reconnect-ws.git"
+  },
+  "keywords": [
+    "reconnect",
+    "websocket",
+    "ws",
+    "stream"
+  ],
+  "author": "Rong Shen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacobbubu/reconnect-ws/issues"
+  },
+  "homepage": "https://github.com/jacobbubu/reconnect-ws",
+  "dependencies": {
+    "reconnect-core": "0.0.1",
+    "websocket-stream": "~0.5.0"
+  },
+  "devDependencies": {
+    "ws": "~0.4.31"
+  }
+}
