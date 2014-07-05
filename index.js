@@ -2,6 +2,15 @@ var websocket = require('websocket-stream');
 var inject = require('reconnect-core');
 
 module.exports = inject(function () {
+  // Create new websocket-stream instance
   var args = [].slice.call(arguments);
-  return websocket.apply(null, args);
+  var ws = websocket.apply(null, args);
+
+  // Copy buffer from old websocket-stream instance on the new one
+  if(this.prevCon)
+    ws._buffer = this.prevCon._buffer;
+  this.prevCon = ws;
+
+  // Return new websocket-stream instance
+  return ws;
 });
