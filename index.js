@@ -7,8 +7,9 @@ module.exports = inject(function () {
   var ws = websocket.apply(null, args);
 
   // Copy buffer from old websocket-stream instance on the new one
-  if(this.prevCon)
-    ws._buffer = this.prevCon._buffer;
+  var prevCon = this.prevCon;
+  if(prevCon && prevCon._buffer)
+    ws._buffer = prevCon._buffer;
   this.prevCon = ws;
 
   // Return new websocket-stream instance
