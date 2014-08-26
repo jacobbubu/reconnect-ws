@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/jacobbubu/reconnect-ws",
   "dependencies": {
-    "reconnect-core": "0.1.0",
+    "reconnect-core": "^0.2.0",
     "websocket-stream": "~0.5.1"
   },
   "devDependencies": {
