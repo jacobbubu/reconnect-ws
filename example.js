@@ -2,7 +2,7 @@ var reconnect = require('./');
 
 //  start client first
 reconnect(function (stream) {
-  stream.on('data', console.log);
+  stream.on('data', function(data) { console.log(data.toString()) });
   // => yup, I'm up!
 }).on('reconnect', function(n, delay) {
   console.log('reconnect to server', n, delay);
