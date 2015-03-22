@@ -1,6 +1,6 @@
 {
   "name": "reconnect-ws",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Reconnect a websocket stream when it goes down.",
   "main": "index.js",
   "scripts": {
@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/jacobbubu/reconnect-ws",
   "dependencies": {
-    "reconnect-core": "0.0.1",
-    "websocket-stream": "~0.5.0"
+    "reconnect-core": "^1.0.0",
+    "websocket-stream": "^1.4.0"
   },
   "devDependencies": {
     "ws": "~0.4.31"
